@@ -1,38 +1,98 @@
-.App {
+.app--background {
+  background-color: #f5f7fb;
+  height: 100vh;
+  position: relative;
+}
+
+.blob-1 {
+  background-color: #fffad1;
+  border-radius: 95px;
+  content: " ";
+  height: 435px;
+  left: 77%;
+  bottom: 60vh;
+  position: absolute;
+  transform: rotate(-128.49deg);
+  width: 495px;
+  z-index: 0;
+}
+
+.blob-2 {
+  background-color: #deebf8;
+  border-radius: 95px;
+  content: " ";
+  height: 465px;
+  right: 78%;
+  top: 60vh;
+  position: absolute;
+  transform: rotate(-1.49deg);
+  width: 835px;
+  z-index: 0;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-size: 31.25px;
+  font-weight: 700;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header p {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quiz--button {
+  background-color: #4d5b9e;
+  border: none;
+  border-radius: 12px;
+  color: #f5f7fb;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 36px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quiz--button:hover {
+  background-color: #deebf8;
+  color: #293264;
+}
+
+.questions--container {
+  margin: 0 auto;
+  position: relative;
+  width: 88%;
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tools--container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tools--container span {
+  font-weight: 700;
+  font-size: 12.8px;
+  line-height: 15px;
+  margin-right: 16px;
 }
